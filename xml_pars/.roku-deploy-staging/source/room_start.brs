@@ -42,6 +42,7 @@ function room_start(object)
 
 		' ###
 		' ### 
+STOP
 		component_children_nodes = component.GetChildNodes() 'work! ounly for test
 		component_children_quantity = component_children_nodes.Count() 'work! ounly for test
 
