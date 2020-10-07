@@ -1,0 +1,4 @@
+out/
+channel/out/*.*
+xml_pars/out/*.*
+
