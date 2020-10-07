@@ -22,7 +22,6 @@ function room_start(object)
 		' ###
 		' ### Get by Name Elements from XML
 		xml_group = component.children.scene.objects.GetNamedElements("group")
-
 		
 		' ###
 		' ### Get atribute from XML
@@ -34,12 +33,18 @@ function room_start(object)
 
 		for i = 0 to m.group_data.Count()-1 step i + 1
 			object_data = xml_group[i].GetNamedElements("object")
-			m.object_data.Push([object_data])		
+			' m.object_data.Push([object_data])	
+			dataTemp = 0
+			for each item in object_data
+				dataTemp++ 
+				print dataTemp
+				attributes = item.GetAttributes()
+				m.object_data.Push({ id : attributes["id"], offset : attributes["offset"], size : attributes["size"], type : attributes["type"], image_id : attributes["image_id"]  })
+			end for
 		end for
 
 		test = m.object_data
-
-
+		
 		' ###
 		' ### 
 STOP
