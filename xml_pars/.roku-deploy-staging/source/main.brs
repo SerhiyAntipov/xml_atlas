@@ -7,7 +7,7 @@ sub Main()
 	
 	' ###
 	' ### load atlas
-	game.loadBitmap("atlas", "pkg:/sprites/atlas.png")
+	' game.loadBitmap("atlas", "pkg:/sprites/atlas.png")
 
 
 	' ### load room

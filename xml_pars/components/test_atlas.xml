@@ -4,35 +4,29 @@
         <scene id="pop_up_level_up_sample" size="1280 720" zoom="true" state="0" max_state="0">
             <objects>
                 <group  id="text">
-                    <object id="10" offset="609 77" size="59 66" type="image"  image_id="text_10.png" />
-                    <object id="500m" offset="577 295" size="178 37" type="image"  image_id="text_500m.png" />
-                    <object id="100m" offset="583 400" size="174 37" type="image"  image_id="text_100m.png" />
+                    <object id="10m" offset="609 77" size="59 66" type="image"  image_id="text_10.png" alpha="255" />
+                    <object id="500m" offset="577 295" size="178 37" type="image"  image_id="text_500m.png" alpha="255" />
+                    <object id="100m" offset="583 400" size="174 37" type="image"  image_id="text_100m.png" alpha="255" />
                 </group>
                 <group  id="btn_green">
-                    <object id="hover" offset="517 556" size="236 103" type="image"  image_id="btn_green_hover.png" />
-                    <object id="idle" offset="526 566" size="218 89" type="image"  image_id="btn_green_idle.png" />
+                    <object id="hover" offset="517 556" size="236 103" type="image"  image_id="btn_green_hover.png" alpha="255" />
+                    <object id="idle" offset="526 566" size="218 89" type="image"  image_id="btn_green_idle.png" alpha="255" />
                 </group>
                 <group  id="new_slot">
-                    <object id="bg" offset="464 467" size="342 91" type="image"  image_id="new_slot_bg.png" />
-                    <object id="icon" offset="516 469" size="92 87" type="image"  image_id="new_slot_icon.png" />
-                    <object id="txt_name" offset="632 506" size="140 22" type="image"  image_id="new_slot_txt_name.png" />
+                    <object id="bg" offset="464 467" size="342 91" type="image"  image_id="new_slot_bg.png" alpha="255" />
+                    <object id="icon" offset="516 469" size="92 87" type="image"  image_id="new_slot_icon.png" alpha="255" />
+                    <object id="txt_name" offset="632 506" size="140 22" type="image"  image_id="new_slot_txt_name.png" alpha="255" />
                 </group>
                 <group  id="popup">
-                    <object id="bg_bot" offset="428 447" size="414 244" type="image"  image_id="popup_bg_bot.png" />
-                    <object id="bg_bot_up" offset="428 355" size="414 244" type="image"  image_id="popup_bg_bot_up.png" />
-                    <object id="bg_top" offset="362 0" size="546 458" type="image"  image_id="popup_bg_top.png" />
+                    <object id="bg_bot" offset="428 447" size="414 244" type="image"  image_id="popup_bg_bot.png" alpha="255" />
+                    <object id="bg_bot_up" offset="428 355" size="414 244" type="image"  image_id="popup_bg_bot_up.png" alpha="255" />
+                    <object id="bg_top" offset="362 0" size="546 458" type="image"  image_id="popup_bg_top.png" alpha="255" />
                 </group>
-                <group  id="bg">
-                    <object id="game" offset="0 0" size="1280 720" type="image"  image_id="bg_game.png" />
-                    <object id="wnd" offset="0 0" size="1280 720" type="image"  image_id="bg_wnd.png" />
+                <group  id="bg">  
+                    <object id="game" offset="0 0" size="1280 720" type="image"  image_id="bg_game.png" alpha="125" />
+                    <object id="wnd" offset="0 0" size="1280 720" type="image"  image_id="bg_wnd.png" alpha="255" />
                 </group>
             </objects>
         </scene>
-    </children>
-    <children>
-        <test></test>
-    </children>
-    <children>
-        <test></test>
     </children>
 </component>
