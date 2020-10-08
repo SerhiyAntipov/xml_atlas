@@ -5,10 +5,9 @@ sub Main()
 	game = new_game(1280, 720, true) ' This initializes the game engine
 	m.game = game
 	
-	' ###
-	' ### load atlas
-	' game.loadBitmap("atlas", "pkg:/sprites/atlas.png")
-
+	
+	' ### load object
+	game.defineObject("xmlToBrsScene", xmlToBrsScene)
 
 	' ### load room
 	game.defineRoom("room_start", room_start)
