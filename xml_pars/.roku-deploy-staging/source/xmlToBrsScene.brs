@@ -1,20 +1,25 @@
 function xmlToBrsScene(object)
+	
 	object.group_data = []
 	object.object_data = []
-	' params.src = object.data.src
-
+	
 	object.onCreate = function(args)
+		
+		' ###
+		' ### Get argument function {src: "pkg:/components/test_atlas.xml"} 
+		m.args = args
 
 		' ###
 		' ### XML parse
 		url = CreateObject("roUrlTransfer")
-		url = "pkg:/components/test_atlas.xml"
+		url = m.args.src
 
 		component = CreateObject("roXMLElement")
 		component_xml = ReadAsciiFile(url)
 		component.Parse(component_xml)
 
 		sceneAttributes = component.children.scene.GetAttributes()
+		
 		' ###
 		' ### Get by Name Elements from XML
 		xml_group = component.children.scene.objects.GetNamedElements("group")

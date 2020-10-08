@@ -1,10 +1,8 @@
 function room_start(object)
-	object.group_data = []
-	object.object_data = []
-
+	
 	object.onCreate = function(args)
-		m.game.createInstance( "xmlToBrsScene" , {src:1} )
 
+		m.game.createInstance( "xmlToBrsScene" , {src: "pkg:/components/test_atlas.xml"} )
 
 	end function
 
