@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 
+=======
+xml_pars/out/*
+xml_pars/.roku-deploy-staging/*
+xml_pars/.vscode/*
+>>>>>>> bc2221e8704d7d6eddb4a3d2a44c985df4474629
